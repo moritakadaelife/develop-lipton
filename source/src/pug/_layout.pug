@@ -1,0 +1,21 @@
+block settings
+  - var pageTitle;
+
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+
+    title: block head_title
+      | #{pageTitle}
+
+    meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
+
+    block head_css
+
+    block head_js
+
+  body
+    include _header
+    block contents
+    include _footer
