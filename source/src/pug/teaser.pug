@@ -15,14 +15,16 @@ html(lang="ja")
 
   body
     .lptn-teaser
-      span#js-lptn-teaser--countdown-days.lptn-teaser--countdown-number
+      .lptn-teaser--countdown
+        span#js-lptn-teaser--countdown-days.lptn-teaser--countdown-number
+    footer.lptn-teaser-footer
+      | &copy; Unilever, All Rights Reserved.
 
     script.
       function countdown() {
         var d = new Date,
             t = new Date(2018, 10, 14, 00, 00, 00),
             n = Math.max(t.getTime() - d.getTime(), 0) / 1000;
-        console.log(n);
         document.getElementById('js-lptn-teaser--countdown-days').innerHTML = Math.floor(n / 86400);
       }
       countdown();

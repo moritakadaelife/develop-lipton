@@ -1,17 +1,69 @@
-.lptn-teaser
-  background: url(../img/teaser/bg.jpg) no-repeat 0 0
-  background-size: cover
-  padding-top: 160%
+=mq-max-screen($width)
+  @media all and (max-width: $width)
+    @content
 
-  &--countdown-number
-    margin: auto
-    padding-top: 68%
-    position: absolute
-    top: 0
-    right: 0
-    left: 0
-    line-height: 1
-    color: #F9D649
+=mq-min-screen($width)
+  @media all and (min-width: $width)
+    @content
+
+body
+  margin: 0
+  font-size: 12px
+
+.lptn-teaser
+  padding-top: 8%
+  background: url(../img/teaser/bg.png) no-repeat center 25px
+  background-size: contain
+
+  &--countdown
+    border-radius: 60px
+    position: relative
+    width: 497px
+    height: 505px
+    background: url(../img/teaser/lipton-countdown.png) no-repeat center center
+    background-size: cover
+    box-shadow: 15px 15px 30px 0px rgba(153,153,153,0.75)
+    transform: scale(0.5)
+
+    &-number
+      margin-right: 2%
+      padding-top: 42%
+      position: absolute
+      top: 0
+      right: 0
+      left: 0
+      line-height: 1
+      color: #F9D649
+      text-align: center
+      font-weight: bold
+      font-size: 800%
+
+  &-footer
     text-align: center
-    font-weight: bold
-    font-size: 340%
+
++mq-max-screen(320px)
+  .lptn-teaser
+    &--countdown
+      left: -27.5%
+
++mq-min-screen(360px)
+  .lptn-teaser
+    &--countdown
+      left: -17.5%
+
++mq-min-screen(375px)
+  .lptn-teaser
+    &--countdown
+      left: -15%
+
++mq-min-screen(410px)
+  .lptn-teaser
+    min-height: 600px
+    &--countdown
+      left: -9.5%
+
++mq-min-screen(414px)
+  .lptn-teaser
+    min-height: 600px
+    &--countdown
+      left: -9.5%

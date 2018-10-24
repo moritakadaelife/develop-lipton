@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="../css/teaser.css">
   </head>
   <body>
-    <div class="lptn-teaser"><span class="lptn-teaser--countdown-number" id="js-lptn-teaser--countdown-days"></span></div>
+    <div class="lptn-teaser">
+      <div class="lptn-teaser--countdown"><span class="lptn-teaser--countdown-number" id="js-lptn-teaser--countdown-days"></span></div>
+    </div>
+    <footer class="lptn-teaser-footer">&copy; Unilever, All Rights Reserved.</footer>
     <script>
       function countdown() {
         var d = new Date,
             t = new Date(2018, 10, 14, 00, 00, 00),
             n = Math.max(t.getTime() - d.getTime(), 0) / 1000;
-        console.log(n);
         document.getElementById('js-lptn-teaser--countdown-days').innerHTML = Math.floor(n / 86400);
       }
       countdown();
