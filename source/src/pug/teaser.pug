@@ -1,5 +1,28 @@
-extends _layout.pug
+block var
+  - metas = {}
+  - metas.title = '11/18のTEA STANDオープンまであと日'
 
-block contents
-  .lptn-teaser
-    | ティーザーですよ
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+
+    title #{metas.title}
+
+    link(rel="stylesheet" href="../css/index.css")
+
+  body
+    .lptn-teaser
+      span#js-lptn-teaser--countdown-days.lptn-teaser--countdown-number
+
+    script.
+      function countdown() {
+        var d = new Date,
+            t = new Date(2018, 10, 14, 00, 00, 00),
+            n = Math.max(t.getTime() - d.getTime(), 0) / 1000;
+        console.log(n);
+        document.getElementById('js-lptn-teaser--countdown-days').innerHTML = Math.floor(n / 86400);
+      }
+      countdown();
