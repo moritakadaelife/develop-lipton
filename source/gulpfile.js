@@ -6,8 +6,8 @@ const sass = require('gulp-sass');
 const paths = {
   'pug': './src/pug/',
   'sass': './src/sass/',
-  'html': './pub/html/',
-  'css': './pub/css/',
+  'html': './leaf/tea_stand/',
+  'css': './leaf/tea_stand/css/',
 };
 const errorHandler = function(error) {
   notifier.notify({
