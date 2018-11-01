@@ -33,7 +33,7 @@ gulp.task('default', function(){
   gulp.watch(paths.sass + '*.sass', function(){
     gulp.src(paths.sass + '*.sass')
     .pipe(sass({
-        outputStyle: 'compressed'
+        outputStyle: 'pretty'
       })
       .on('error', sass.logError))
     .pipe(gulp.dest(paths.css));

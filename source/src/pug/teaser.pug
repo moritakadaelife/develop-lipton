@@ -13,17 +13,19 @@ html(lang="ja")
 
     link(rel="stylesheet" href="css/teaser.css")
 
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+
   body
-    .lptn-teaser
-      header.lptn-teaser-header
+    .lptn-teaser.lptn-loading
+      header.lptn-teaser-header.lptn-hidden
         img(src="img/teaser/lipton-logo.png")
         p.lptn-teaser--text-open
           img(src="img/teaser/lipton-text__open.png")
-      .lptn-teaser--countdown
-        span#js-lptn-teaser--countdown-days.lptn-teaser--countdown-number
-      p.lptn-teaser--text-countdown
+      .lptn-teaser--countdown.lptn-teaser-animation
+        span#js-lptn-teaser--countdown-days.lptn-teaser--countdown-number.lptn-hidden
+      p.lptn-teaser--text-countdown.lptn-hidden
         img(src="img/teaser/lipton-text__countdown.png")
-    footer.lptn-teaser-footer
+    footer.lptn-teaser-footer.lptn-hidden
       a(href="http://www.lipton.jp/", target="_blank")
         img(src="img/teaser/footer_logo.png")
       p.liptn-copyright &copy; Unilever, All Rights Reserved.
@@ -36,3 +38,8 @@ html(lang="ja")
         document.getElementById('js-lptn-teaser--countdown-days').innerHTML = Math.floor(n / 86400);
       }
       countdown();
+      setTimeout(function(){
+        $('.lptn-teaser').removeClass('lptn-loading');
+        $('.lptn-teaser--countdown').removeClass('lptn-teaser-animation');
+        $('.lptn-teaser-header, .lptn-teaser-footer, .lptn-teaser--text-open, .lptn-teaser--text-countdown, .lptn-teaser--countdown-number').removeClass('lptn-hidden');
+      }, 2000);

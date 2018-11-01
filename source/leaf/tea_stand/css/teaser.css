@@ -1,1 +1,204 @@
-body{margin:0;font-size:12px;font-family:intro-unilever,"Source Sans Pro",Arial,Tahoma,Verdana,sans-serif}p{margin-block-start:0;margin-block-end:0}.lptn-teaser{padding-top:5%;padding-bottom:5%;background-color:#ffd502;background-size:contain}.lptn-teaser-header{text-align:center}.lptn-teaser-header>img{width:calc(240px / 2)}.lptn-teaser--text-open{margin:5% 0}.lptn-teaser--text-open img{width:calc(487px / 2)}.lptn-teaser--countdown{margin:0 auto 10%;border-radius:30px;position:relative;width:calc(497px / 2);height:calc(505px / 2);background:url(../img/teaser/lipton-countdown.png) no-repeat center center;background-size:cover;box-shadow:15px 15px 15px 0px rgba(153,153,153,0.75)}.lptn-teaser--countdown-number{margin-right:2%;padding-top:37%;position:absolute;top:0;right:0;left:0;line-height:1;color:#fff;text-align:center;font-weight:bold;font-size:550%}.lptn-teaser--text-countdown{text-align:center}.lptn-teaser--text-countdown img{width:calc(593px / 2)}.lptn-teaser-footer{padding-top:5%;padding-bottom:5%;text-align:center}.lptn-teaser-footer img{margin-bottom:5%;width:calc(120px / 2)}@media all and (min-width: 768px){.lptn-teaser-header>img{width:240px}.lptn-teaser--text-open img{width:487px}.lptn-teaser--countdown{margin:0 auto 5%;border-radius:47px;width:399px;height:404px}.lptn-teaser--countdown-number{font-size:900%}.lptn-teaser--text-countdown img{width:593px}.lptn-teaser-footer img{width:97px}}
+body {
+  margin: 0;
+  font-size: 12px;
+  font-family: intro-unilever,"Source Sans Pro",Arial,Tahoma,Verdana,sans-serif; }
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0; }
+
+.lptn-hidden {
+  opacity: 0 !important; }
+
+.lptn-loading {
+  background-color: #fff !important; }
+
+.lptn-teaser {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #ffd502;
+  background-size: contain;
+  transition: background-color 0.5s; }
+  .lptn-teaser-header {
+    text-align: center;
+    transition: opacity 0.5s; }
+    .lptn-teaser-header > img {
+      width: calc(240px / 2); }
+  .lptn-teaser--text-open {
+    margin: 5% 0;
+    transition: opacity 0.5s; }
+    .lptn-teaser--text-open img {
+      width: calc(487px / 2); }
+  .lptn-teaser--countdown {
+    margin: 0 auto 10%;
+    border-radius: 30px;
+    position: relative;
+    width: calc(497px / 2);
+    height: calc(505px / 2);
+    background: url(../img/teaser/lipton-countdown.png) no-repeat center center;
+    background-size: contain;
+    box-shadow: 15px 15px 15px 0px rgba(153, 153, 153, 0.75); }
+    .lptn-teaser--countdown-number {
+      margin-right: 2%;
+      padding-top: 37%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      line-height: 1;
+      color: #fff;
+      text-align: center;
+      font-weight: bold;
+      font-size: 550%; }
+    .lptn-teaser--countdown.lptn-teaser-animation {
+      position: relative;
+      width: 100%;
+      height: calc(505px / 2);
+      background: none;
+      box-shadow: none;
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: contain;
+      animation-name: calendar;
+      animation-duration: 2s;
+      animation-delay: 0;
+      animation-iteration-count: 1;
+      animation-direction: normal; }
+
+@keyframes calendar {
+  0% {
+    background-image: url(../img/teaser/lipton-countdown-animation--000.png);
+    opacity: 0; }
+  4% {
+    background-image: url(../img/teaser/lipton-countdown-animation--010.png);
+    opacity: 0; }
+  8% {
+    background-image: url(../img/teaser/lipton-countdown-animation--020.png);
+    opacity: 0; }
+  12% {
+    background-image: url(../img/teaser/lipton-countdown-animation--030.png);
+    opacity: 0; }
+  16% {
+    background-image: url(../img/teaser/lipton-countdown-animation--040.png);
+    opacity: 0; }
+  20% {
+    background-image: url(../img/teaser/lipton-countdown-animation--050.png);
+    opacity: 0; }
+  24% {
+    background-image: url(../img/teaser/lipton-countdown-animation--060.png);
+    opacity: 0; }
+  28% {
+    background-image: url(../img/teaser/lipton-countdown-animation--070.png);
+    opacity: 0; }
+  32% {
+    background-image: url(../img/teaser/lipton-countdown-animation--080.png);
+    opacity: 0; }
+  36% {
+    background-image: url(../img/teaser/lipton-countdown-animation--090.png);
+    opacity: 0; }
+  40% {
+    background-image: url(../img/teaser/lipton-countdown-animation--100.png);
+    opacity: 0.5; }
+  43% {
+    background-image: url(../img/teaser/lipton-countdown-animation--000.png); }
+  46% {
+    background-image: url(../img/teaser/lipton-countdown-animation--010.png); }
+  49% {
+    background-image: url(../img/teaser/lipton-countdown-animation--020.png); }
+  52% {
+    background-image: url(../img/teaser/lipton-countdown-animation--030.png); }
+  55% {
+    background-image: url(../img/teaser/lipton-countdown-animation--040.png); }
+  58% {
+    background-image: url(../img/teaser/lipton-countdown-animation--050.png); }
+  61% {
+    background-image: url(../img/teaser/lipton-countdown-animation--060.png); }
+  64% {
+    background-image: url(../img/teaser/lipton-countdown-animation--070.png); }
+  67% {
+    background-image: url(../img/teaser/lipton-countdown-animation--080.png); }
+  68% {
+    background-image: url(../img/teaser/lipton-countdown-animation--090.png); }
+  70% {
+    background-image: url(../img/teaser/lipton-countdown-animation--000.png); }
+  72% {
+    background-image: url(../img/teaser/lipton-countdown-animation--010.png); }
+  74% {
+    background-image: url(../img/teaser/lipton-countdown-animation--020.png); }
+  76% {
+    background-image: url(../img/teaser/lipton-countdown-animation--030.png); }
+  78% {
+    background-image: url(../img/teaser/lipton-countdown-animation--040.png); }
+  80% {
+    background-image: url(../img/teaser/lipton-countdown-animation--050.png); }
+  82% {
+    background-image: url(../img/teaser/lipton-countdown-animation--060.png); }
+  84% {
+    background-image: url(../img/teaser/lipton-countdown-animation--070.png); }
+  86% {
+    background-image: url(../img/teaser/lipton-countdown-animation--080.png); }
+  87% {
+    background-image: url(../img/teaser/lipton-countdown-animation--090.png); }
+  88% {
+    background-image: url(../img/teaser/lipton-countdown-animation--100.png); }
+  89% {
+    background-image: url(../img/teaser/lipton-countdown-animation--000.png); }
+  90% {
+    background-image: url(../img/teaser/lipton-countdown-animation--010.png); }
+  91% {
+    background-image: url(../img/teaser/lipton-countdown-animation--020.png); }
+  92% {
+    background-image: url(../img/teaser/lipton-countdown-animation--030.png); }
+  93% {
+    background-image: url(../img/teaser/lipton-countdown-animation--040.png); }
+  94% {
+    background-image: url(../img/teaser/lipton-countdown-animation--050.png); }
+  95% {
+    background-image: url(../img/teaser/lipton-countdown-animation--060.png); }
+  96% {
+    background-image: url(../img/teaser/lipton-countdown-animation--070.png); }
+  98% {
+    background-image: url(../img/teaser/lipton-countdown-animation--080.png); }
+  99% {
+    background-image: url(../img/teaser/lipton-countdown-animation--090.png); }
+  100% {
+    background-image: url(../img/teaser/lipton-countdown-animation--100.png); } }
+      .lptn-teaser--countdown.lptn-teaser-animation .lptn-teaser--countdown-number {
+        display: none; }
+  .lptn-teaser--text-countdown {
+    text-align: center;
+    transition: opacity 0.5s; }
+    .lptn-teaser--text-countdown img {
+      width: calc(593px / 2); }
+  .lptn-teaser-footer {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    transition: opacity 0.5s; }
+    .lptn-teaser-footer img {
+      margin-bottom: 5%;
+      width: calc(120px / 2); }
+
+@media all and (max-width: 320px) {
+  .lptn-teaser-animation {
+    margin-left: -30px;
+    width: calc(743px / 2) !important; } }
+
+@media all and (min-width: 768px) {
+  .lptn-teaser-header > img {
+    width: 160px; }
+  .lptn-teaser--text-open img {
+    width: 487px; }
+  .lptn-teaser--countdown {
+    margin: 0 auto 5%;
+    border-radius: 47px;
+    width: 399px;
+    height: 404px; }
+    .lptn-teaser--countdown-number {
+      font-size: 900%; }
+    .lptn-teaser--countdown.lptn-teaser-animation {
+      height: 404px; }
+  .lptn-teaser--text-countdown img {
+    width: 593px; }
+  .lptn-teaser-footer img {
+    width: 97px; } }
